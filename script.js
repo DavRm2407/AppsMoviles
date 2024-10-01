@@ -28,5 +28,5 @@ let resta = a-b; //3
 let multiplicacion = a*b; //10
 let division = a/b; //2.5
 
-//git .add . / git commit -m "18/09/2024 David y Mily" 
+//git .add . / git commit -m "18/09/2024 David " 
 //git push 

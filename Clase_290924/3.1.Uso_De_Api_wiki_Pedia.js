@@ -1,14 +1,10 @@
 const terminoBusqueda = 'Programación'; // Término que deseas buscar 
-const url = 
-`https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=$ 
-{terminoBusqueda} &format=json&origin=*`; 
+const url = "https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=$ {terminoBusqueda} &format=json&origin=*"; 
 // Función para obtener resultados de Wikipedia 
 async function buscarEnWikipedia () { 
 try { 
-const respuesta = await fetch (url); // Llamada a la API de 
-Wikipedia 
-JSON 
-const datos = await respuesta.json(); // Convierte la respuesta a 
+const respuesta = await fetch (url); // Llamada a la API de Wikipedia 
+const datos = await respuesta.json(); // Convierte la respuesta a JSON 
 // Si hay resultados, mostrarlos en una lista 
 const resultados = datos.query.search; 
 
@@ -29,12 +25,15 @@ ${resultado.snippet}`;
 listaResultados.appendChild(li); 
 }); 
 } else { 
-document.getElementById('resultados').textContent = 'No se encontraron resultados. '; 
+document.getElementById('resultados').textContent = 'No se encontraron resultados. ;'
 } 
-} catch (error) { 
+} 
+catch (error) { 
 // En caso de error, mostrar un mensaje 
 document.getElementById('resultados').textContent = 'Error al obtener los datos de Wikipedia.'; 
+console.error ('Error:', error); 
 } 
 }
-console.error ('Error:', error); 
+
 // Llamar a la función para hacer la búsqueda cuando la página se carga buscarEnWikipedia (); 
+buscarEnWikipedia (); 

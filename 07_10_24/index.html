@@ -1,14 +1,24 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="widht-device-width", initial-scale="1.0">
-        <title>Calculadora Sencilla</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-<body>
-    <div class="calculator">
 
+<!DOCTYPE html>
+<!--Define el tipo de documento como HTML.-->
+<html lang="es">
+<!-- Inicia el documento HTML y establece el idioma del contenido.-->   
+    <head>
+    <!-- Comienza la sección de encabezado, que contiene metadatos y enlaces a recursos. -->    
+        <meta charset="UTF-8">
+        <!-- Define la codificación de caracteres como UTF-8, este soporta la mayoría de los caracteres en diferentes idiomas. -->
+        <meta name="viewport" content="widht-device-width", initial-scale="1.0">
+        <!-- Configura la visualización en dispositivos móviles; asegura que el ancho de la página sea igual al del dispositivo. -->
+        <title>Calculadora Sencilla</title>
+        <!-- Define el título de la página, que aparece en la pestaña del navegador. -->
+        <link rel="stylesheet" href="styles.css">
+         <!-- llama a otra página llamada "styles.css" para dar formato a la página. -->
+    </head>
+
+<body>
+<!--inicia el cuerpo de la página-->
+    <div class="calculator">
+    
         <input type="text" id="display" class="calculator-screen" value="" disabled>
             <div class="calculator-buttons">
                 <button class="button" onclick="clearDisplay()">C</button>
@@ -38,5 +48,8 @@
 
     </div>
         <script src="script.js"></script>
+        <!--llama al script que le da las funcionalidades a la calculadora-->
 </body>
+<!--finaliza el cuerpo de la página :)-->
 </html>
+<!--finaliza la página-->
